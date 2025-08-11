@@ -1,0 +1,49 @@
+.food-display {
+  margin-top: 30px;
+  margin: 50px;
+}
+
+/* Remove margin on mobile view */
+@media (max-width: 768px) {
+  .food-display {
+    margin: 0;
+  }
+}
+
+
+.food-display h2{
+    font-size: max(2vw 24px);
+    font-weight: 600;
+     margin: 30px;
+
+}
+
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.filter-toggle {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.filter-toggle button {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+  margin-left: 23px;
+}
+
+.filter-toggle button.active {
+  background-color: tomato;
+  color: white;
+  border-color: tomato;
+}
